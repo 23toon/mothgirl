@@ -200,3 +200,7 @@ span {
   text-align: center;
   margin: auto;
 }
+
+#secret a {
+  text-decoration: none;
+}
