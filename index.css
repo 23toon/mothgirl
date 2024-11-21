@@ -1,53 +1,202 @@
-html {
-    background-color: darkslateblue;
-    background-image: url(/index/background.jpg);
-    background: invert;
+:root {
+  --header-image: url('/index/banner/banner.png');
+  --body-bg-image: url('/background.gif');
+  --content: #000000;
+}
+
+@font-face {
+  font-family: Nunito;
+  src: url('https://sadhost.neocities.org/fonts/Nunito-Regular.ttf');
+}
+
+@font-face {
+  font-family: Nunito;
+  src: url('https://sadhost.neocities.org/fonts/Nunito-Bold.ttf');
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: Nunito;
+  src: url('https://sadhost.neocities.org/fonts/Nunito-Italic.ttf');
+  font-style: italic;
+}
+
+@font-face {
+  font-family: Nunito;
+  src: url('https://sadhost.neocities.org/fonts/Nunito-BoldItalic.ttf');
+  font-style: italic;
+  font-weight: bold;
 }
 
 body {
-    text-align: center;
-    display: block;
+  font-family: 'Nunito', sans-serif;
+  margin: 0;
+  background-color: #000000;
+  background-size: 300px;
+  color: #fdfffd;
+  background-image: var(--body-bg-image);
+  
 }
 
-header {
-    text-align: center;
-    font-size: 28px;
-    color: white;
-    margin-top: 40px;
-    margin-bottom: 40px;
-    position: relative;
+#container {
+  width: 90%;
+  margin: auto;
 }
 
-.bunmove {
-    height: 80px;
+#container a {
+  color: #9dd560;
+  font-weight: bold;
+  /*text-decoration: none;*/
 }
 
-.entrance {
-    position: relative;
-    background-color: #993232;
-    width: 350px;
-    border: 12px red;
-    padding: 50px;
-    margin: auto;
-    border-style: ridge;
-    display: block;
-    color: #bcdfe3;
-    font-family: monospace;
-    font-size: 18px;
+#container a:hover {
+  color: #9360d5;
+  font-weight: bold;
 }
 
-a {
-    color: aqua;
-    font-size: 30px;
-    font-family: cursive;
-    text-decoration: none;
+#topBar {
+  width: 90%;
+  margin: auto;
+  margin-top: 10px;
+  height: 50px;
+  font-size: smaller;
+  background-color: #000000;
+  border-top: 3px solid #ffffff;
+  border-left: 3px solid #ffffff;
+  border-right: 3px solid #ffffff;
+  border-radius: 20px 20px 0px 0px;
 }
 
-a:hover {
-    color: fuchsia;
-    font-size: 36px;
+#header {
+  width: 90%;
+  margin: auto;
+  margin-bottom: 0;
+  border-left: 3px solid #ffffff;
+  border-right: 3px solid #ffffff;
+  border-bottom: 3px solid #ffffff;
+  background-color: #3c435f;
+  height: 150px;
+  background-image:var(--header-image);
+  background-size: 33% 100%;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
-.belowtext {
-    color: grey;
+main {
+  background-color: #3c435f;
+  padding: 15px;
+  border-radius: 0px 0px 20px 20px;
+  border: 3px solid #ffffff;
+  height: auto;
+  overflow: hidden;
+  margin: auto;
+  text-align: center;
+}
+
+#sidebar-left {
+  display: inline-block;
+  margin-left: 10px;
+  width: 21%;
+  float: left;
+}
+
+#main-box {
+  display: inline-block;
+  width: 53%;
+  margin: auto;
+  text-align: center;
+}
+
+#sidebar-right {
+  display: inline-block;
+  margin-right: 10px;
+  width: 21%;
+  float: right;
+}
+
+#box {
+  background-color:#000000;
+  border: 3px solid #9dd560;
+  border-radius: 20px;
+  padding: 10px 20px 10px 20px;
+  box-shadow: 4px 4px #9360d5;
+  text-align: left;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+h1,
+h2,
+h3 {
+  color: #f2fae0;
+}
+
+h1 {
+  font-size: 26px;
+}
+
+p {
+  font-size: 18px;
+}
+
+strong {
+  /* this styles bold text */
+  color: #f2fae0;
+}
+
+/* this is just a cool box, it's the darker colored one */
+.innerbox {
+  background-color: #3c435f;
+  border: 1px solid #9dd560;
+  padding: 10px;
+}
+
+#marquee-img {
+  height: 45px;
+  width: auto;
+}
+
+.marquee {
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 45px;
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.marquee--inner {
+  display: block;
+  width: 210%;
+  position: absolute;
+  animation: marquee 15s linear infinite;
+  &:hover {
+    animation-play-state: paused;
+    color: red;
+  }
+}
+
+span {
+  float: left;
+  width: 50%;
+  overflow: hidden;
+}
+
+@keyframes marquee {
+  0% {
+    left: 0;
+  }
+  100% {
+    left: -100%;
+  }
+}
+
+#blinkies {
+  height: 20px;
+  width: 150px;
+  text-align: center;
+  margin: auto;
 }
