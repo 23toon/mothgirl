@@ -1,206 +1,238 @@
-:root {
-  --header-image: url('/index/banner/banner.png');
-  --body-bg-image: url('/background.gif');
-  --content: #000000;
-}
-
-@font-face {
-  font-family: Nunito;
-  src: url('https://sadhost.neocities.org/fonts/Nunito-Regular.ttf');
-}
-
-@font-face {
-  font-family: Nunito;
-  src: url('https://sadhost.neocities.org/fonts/Nunito-Bold.ttf');
-  font-weight: bold;
-}
-
-@font-face {
-  font-family: Nunito;
-  src: url('https://sadhost.neocities.org/fonts/Nunito-Italic.ttf');
-  font-style: italic;
-}
-
-@font-face {
-  font-family: Nunito;
-  src: url('https://sadhost.neocities.org/fonts/Nunito-BoldItalic.ttf');
-  font-style: italic;
-  font-weight: bold;
-}
-
 body {
-  font-family: 'Nunito', sans-serif;
-  margin: 0;
-  background-color: #000000;
-  background-size: 300px;
-  color: #fdfffd;
-  background-image: var(--body-bg-image);
+  background-image: url(/background.gif);
+  color: black;
+  font-family: sans-serif;
+  font-size: 0.95em;
+  }
   
+a {
+  color: #c7f18b;
 }
 
-#container {
-  width: 90%;
-  margin: auto;
-}
-
-#container a {
-  color: #9dd560;
-  font-weight: bold;
-  /*text-decoration: none;*/
-}
-
-#container a:hover {
+a:hover {
   color: #9360d5;
-  font-weight: bold;
 }
 
-#topBar {
-  width: 90%;
-  margin: auto;
-  margin-top: 10px;
-  height: 50px;
-  font-size: smaller;
-  background-color: #000000;
-  border-top: 3px solid #ffffff;
-  border-left: 3px solid #ffffff;
-  border-right: 3px solid #ffffff;
-  border-radius: 20px 20px 0px 0px;
-}
-
-#header {
-  width: 90%;
-  margin: auto;
-  margin-bottom: 0;
-  border-left: 3px solid #ffffff;
-  border-right: 3px solid #ffffff;
-  border-bottom: 3px solid #ffffff;
-  background-color: #3c435f;
-  height: 150px;
-  background-image:var(--header-image);
-  background-size: 33% 100%;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-main {
-  background-color: #3c435f;
-  padding: 15px;
-  border-radius: 0px 0px 20px 20px;
-  border: 3px solid #ffffff;
-  height: auto;
-  overflow: hidden;
-  margin: auto;
+center {
   text-align: center;
-}
-
-#sidebar-left {
-  display: inline-block;
-  margin-left: 10px;
-  width: 21%;
-  float: left;
-}
-
-#main-box {
-  display: inline-block;
-  width: 53%;
-  margin: auto;
-  text-align: center;
-}
-
-#sidebar-right {
-  display: inline-block;
-  margin-right: 10px;
-  width: 21%;
-  float: right;
-}
-
-#box {
-  background-color:#000000;
-  border: 3px solid #9dd560;
-  border-radius: 20px;
-  padding: 10px 20px 10px 20px;
-  box-shadow: 4px 4px #9360d5;
-  text-align: left;
-  margin-top: 10px;
+  }
+  
+/*Contains everything*/
+.wrapper {
+  width: 1200px;
+  background: #3c435f;
+  margin: 0 auto;
+  top: 0;
+  margin-top: 10px; 
   margin-bottom: 10px;
+  border-radius: 20px;
+  border: 3px solid #fff;
+  height: fit-content;
+  }
+  
+/*Contains main and sidebar divs*/
+.wrapper-2 {
+  position: relative;
+}
+ 
+/*Header and footer images*/
+.header {
+  height: 100px;
+  overflow: hidden;
+  border-bottom: 3px solid #fff;
+  display: block;
+  clear: both;
+  }
+
+.footer {
+  height: 50px;
+  overflow: hidden;
+  margin: 5px;
+  }
+  
+.header img {
+  border-top: 0px;
+  }
+  
+/*Big title at the top of the page.*/  
+.title {
+  padding: 15px 10px 10px 20px;
+  }
+  
+/*Override default margins/padding for headings.*/
+.title h1, .title h2, .title h3 {
+  padding:0;
+  margin: 0;
+  }
+
+/*Container for top row of links.*/
+.links {
+  padding: 5px;
+  padding-top: 3px;
+  padding-bottom: 5px;
+  }
+
+/*These three classes are just for defining the boundaries and size of the main and sidebar columns. Most fancy styling goes in the 'box' class.*/
+.main, .sidebar-right {
+  display: inline-block;
+  }
+  
+.sidebar-left, .sidebar-right {
+  width: 200px;
+  position: absolute;
+  top: 0;
+  }
+
+.sidebar-left {
+  margin-left: 10px;
+  margin-right: 10px;
+  }
+  
+.main {
+  margin-left: 230px;
+  width: 750px;
+  }
+  
+.sidebar-right {
+  margin-right: 10px;
+  margin-left: 10px;
+  }
+  
+/*Box used for individual sections in the sidebar, center column, etc.*/
+.box {  
+  padding: 5px 7px 5px 7px;
+  background: #000;
+  color: #fff;
+  border: 3px solid #c7f18b;
+  margin: 10px 5px 10px 5px;
+  border-radius: 20px;
+  box-shadow: 5px 5px 0px 0px #9360d5;
+  }
+  
+.box2 {
+  width: 45%;
+  border: 3px solid #c7f18b;
+  border-radius: 20px;
+  height: 300px;
+  box-shadow: 5px 5px 0px 0px #9360d5;
+  background: #000;
 }
 
-h1,
-h2,
-h3 {
-  color: #f2fae0;
-}
+/*Prevent overflow of large images in main text areas.*/
+.box img {
+  max-width: 100%;
+  height: auto;
+  }
+  
+/***
+  Not give any style rules by default. Move the padding from the 'box' class here if you want boxes with specially styled headers or images that 
+  don't follow the margins of the main text. (For an example of that: see skin #1.)
+  ***/
+.inner {
+  
+  }
+  
+/* For narrow screens. Makes the sidebars narrower, and makes width of the 
+ * center/main div 50% of the viewport width.
+ */
+@media(max-width:1180px) {
+  .wrapper {
+    width: calc(440px + 50vw);
+    }
+  .main {
+    width: 50vw;
+    }
+  }
+  
+@media(max-width:910px) {
+  .wrapper {
+    width: calc(360px + 52vw);
+    }
+  .sidebar-left, .sidebar-right {
+    width: 160px;
+    }
+  .main {
+    margin-left: 180px;
+    width: 52vw;
+    }
+  }
+  
+/* Mobile compatibility. Puts everything into a standard vertical layout. */
+@media(orientation:portrait) {
+  .wrapper {
+    width: 96vw;
+    margin: 0 auto;
+    padding:0;
+    position: relative;
+    }
+  .wrapper-2 {
+    width: 94vw;
+    margin: 0 auto;
+    padding:0;
+    position: relative;
+    }
+  .sidebar-left, .main, .sidebar-right {
+    position: relative;
+    width: 92vw;
+    margin: 0.25rem 1vw;
+    }
+  .sidebar-left, .sidebar-right {
+    font-size: 0.95em;
+    }
+  }
 
-h1 {
-  font-size: 26px;
+.box {
+    overflow-y: scroll;
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
 }
-
-p {
-  font-size: 18px;
+.box::-webkit-scrollbar { /* WebKit */
+    width: 0;
+    height: 0;
 }
-
-strong {
-  /* this styles bold text */
-  color: #f2fae0;
+.box2 {
+  overflow-y: scroll;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none;  /* Internet Explorer 10+ */
 }
-
-/* this is just a cool box, it's the darker colored one */
-.innerbox {
-  background-color: #3c435f;
-  border: 1px solid #9dd560;
-  padding: 10px;
-}
-
-#marquee-img {
-  height: 45px;
-  width: auto;
+.box2::-webkit-scrollbar { /* WebKit */
+  width: 0;
+  height: 0;
 }
 
 .marquee {
+  height: 50px;
+  width: 1640px;
   overflow: hidden;
   position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 45px;
-  width: 100%;
-  overflow: hidden;
-  white-space: nowrap;
-}
-
-.marquee--inner {
-  display: block;
-  width: 210%;
-  position: absolute;
-  animation: marquee 15s linear infinite;
-  &:hover {
-    animation-play-state: paused;
-    color: red;
-  }
-}
-
-span {
+  margin-top: 25px;
   float: left;
-  width: 50%;
-  overflow: hidden;
+}
+
+.marquee-img {
+  height: 50px;
+  display: inline-block;
+}
+
+.marquee.stretched {
+  width:1800px;
 }
 
 @keyframes marquee {
-  0% {
-    left: 0;
-  }
-  100% {
-    left: -100%;
-  }
+  0% { left: 0; }
+  100% { left: -100%; }
 }
 
-#blinkies {
-  height: 20px;
-  width: 150px;
-  text-align: center;
-  margin: auto;
+.marquee div {
+  display: block;
+  width: 200%;
+  height: auto;
+  position: absolute;
+  overflow: hidden;
+  animation: marquee 11s linear infinite;
 }
 
-#secret a {
-  text-decoration: none;
+.marquee span {
+  float: left;
+  width: 50%;
 }
