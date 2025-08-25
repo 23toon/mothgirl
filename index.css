@@ -16,7 +16,10 @@ a:hover {
 center {
   text-align: center;
   }
-  
+ 
+.background-image {
+  filter: hue-rotate(90deg);
+}
 /*Contains everything*/
 .wrapper {
   width: 1200px;
@@ -116,6 +119,7 @@ center {
   height: 300px;
   box-shadow: 5px 5px 0px 0px #9360d5;
   background: #000;
+  padding-right:10px;
 }
 
 /*Prevent overflow of large images in main text areas.*/
@@ -235,4 +239,21 @@ center {
 .marquee span {
   float: left;
   width: 50%;
+}
+
+h2 {
+  color:white;
+  font-size: 36px;
+  font-weight: bold;
+
+}
+
+.stamp {
+  height: 56px;
+  width: 99px;
+}
+
+.stamp:hover {
+  transition: 0.2s;
+  transform: scale(1.5);
 }
