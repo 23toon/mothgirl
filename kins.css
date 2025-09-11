@@ -1,0 +1,78 @@
+body {
+  background-image: url(/about/kinpage/bg.gif);
+  color: white;
+  font-family: sans-serif;
+  font-size: 0.95em;
+  }
+
+.page {
+    width: 85%;
+    height: fit-content;
+    background-color: black;
+    border-color: deeppink;
+    border-style: solid;
+    border-width: 5px;
+    border-radius: 15px 15px 15px 15px;
+    margin: auto;
+    margin-top: 50px;
+    overflow-y: scroll;
+}
+
+.box {
+    width: 45%;
+    height: 400px;
+    background-color:black;
+    border-color: white;
+    border-style: solid;
+    border-width: 5px;
+    border-radius: 15px 15px 15px 15px;
+    margin: 15px;
+    overflow-y: scroll;
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+    text-align: center;
+}
+
+.boxmini {
+    float:center;
+    width: 90%;
+    height: 50px;
+    border-style:groove;
+    border-color: deeppink;
+    border-radius: 15px 15px 15px 15px;
+    border-width: 5px;
+    margin: 5px;
+    position:relative;
+}
+
+p {
+    font-size: 18px;
+    color: white;
+    font-family:monospace;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+h1 {
+    font-weight: bolder;
+    font-size: 36px;
+    color: white;
+}
+
+.kinimg {
+    width: 128px;
+    height: 128px;
+    object-fit:contain;
+    border-width: 3px;
+    border-style: solid;
+    border-color: white;
+    margin-top: 16px;
+    margin-bottom: 5px;
+    margin-left: 10px;
+    background-color: darkslategrey;
+    box-shadow: 5px 5px 0px 0px grey;
+}
+.kinimg:hover {
+    transition: 0.5s;
+    transform:scale(1.2);
+}
