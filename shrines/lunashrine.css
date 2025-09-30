@@ -1,0 +1,116 @@
+body {
+    background: url(/shrines/luna/green1s0s.gif) black no-repeat center center fixed;
+    -webkit-background-size: cover;
+    height: 250px;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+    height: 250px;
+}
+.shrineall {
+    width: 1500px;
+    height: 650px;
+    border: 2px solid fuchsia;
+    align-content: center;
+}
+
+.columnleft {
+    float: left;
+    border: 2px solid crimson;
+    border-radius: 15px;
+    background: black;
+    width: 250px;
+    height: 550px;
+    margin-top: 60px;
+    color: white;
+    overflow: auto;
+}
+
+.columncenter {
+    display: inline-block;
+    width: 988px;
+    height: 550px;
+    border: 2px solid crimson;
+    border-radius: 15px;
+    background: black;
+    margin-top: 60px;
+}
+
+.centertextleft{
+    padding-left: 30px;
+    text-align: left;
+    color: white;
+    font-family: 'Lucida Console';
+    font-size: 26px;
+    width: 54%;
+    float: left;
+    overflow-y: auto;
+    overflow-x: hidden;
+    text-indent: 40px;
+    height: 520px;
+}
+
+.centertextright{
+    padding-right: 20px;
+    text-align: right;
+    color: white;
+    font-family: 'Courier New';
+    font-size: 50px;
+    color: red;
+    width: 40%;
+    float: right;
+    overflow: auto;
+    text-indent: 95px;
+}
+
+.columnright {
+    float: right;
+    width: 250px;
+    border: 2px solid crimson;
+    border-radius: 15px;
+    height: 550px;
+    background: black;
+    margin-top: 60px;
+    color: white;
+    overflow: auto;
+}
+
+.lunaimage {
+    width: 200px;
+}
+
+.divider {
+    width: 200px;
+}
+
+.stamp{
+    margin: 1px 1px 0px 0px;
+    height: 56px;
+    width: 99px;
+}
+
+.stamp:hover{
+    position: relative;
+    z-index: 1;
+    transform: scale(1.5);
+    background-color: transparent;
+    filter: drop-shadow(6px 6px 0px rgba(0, 0, 0, 0.2));
+    transition: .1s;
+}
+
+.homebutton {
+    color: black;
+    background-color: white;
+    width: 150px;
+    color
+}
+
+.homebutton:link {
+    color: aqua;
+}
+
+.homebutton:visited {
+    color: aqua;
+}
