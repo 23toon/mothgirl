@@ -1,0 +1,110 @@
+body {
+  background-image: url(/about/wifepage/heartbg.jpg);
+  }
+
+.pacifico-regular {
+  font-family: "Pacifico", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.page {
+    width: 85%;
+    height: max-content;
+    background-color: white;
+    border-color: gold;
+    border-style: solid;
+    border-width: 8px;
+    border-radius: 30px;
+    margin: auto;
+    text-align: center;
+}
+
+.header {
+    background-color: #fef9b8;
+    color: black;
+    width:auto;
+    height: fit-content;
+    border-color: gold;
+    border-style: solid;
+    border-width: 4px;
+    border-radius: 15px 15px 0px 0px;
+    margin: 10px;
+    text-align: center;
+}
+
+.footer {
+    background: #fef9b8;
+    color: grey;
+    width:auto;
+    height: fit-content;
+    border-color: gold;
+    border-style: solid;
+    border-width: 4px;
+    border-radius: 0px 0px 15px 15px;
+    margin: 10px;
+    text-align: center;
+}
+
+.box {
+    width: auto;
+    height: 700px;
+    background-color:#fef37e;
+    border-color: gold;
+    border-style: solid;
+    border-width: 4px;
+    margin: 10px;
+    text-align: center;
+}
+
+.minibox {
+    background-color: gold;
+    width: 49.15%;
+    height: 48%;
+    border-color: white;
+    border-style: solid;
+    border-width: 2px;
+    margin: 5px;
+    position: relative;
+    float: center;
+}
+
+p1 {
+    font-size: 18px;
+    color: grey;
+    font-family: cursive;
+}
+
+p2 {
+    font-size: 18px;
+    color: black;
+    font-family: cursive;
+}
+
+h1 {
+    font-size: 48px;
+    color: black;
+    font-family: "Pacifico", cursive;
+}
+
+.stamp {
+    height: 56px;
+    width: 99px;
+    margin: 5px;
+}
+
+.stamp:hover {
+  transition: 0.2s;
+  transform: scale(1.3);
+}
+
+.blinkie {
+    height: 20px;
+    width: 150px;
+    margin: 5px;
+}
+
+.blinkie:hover {
+  transition: 0.2s;
+  transform: scale(1.3);
+}
