@@ -1,0 +1,175 @@
+html {
+    font-size: 18px;
+    min-height:100%
+}
+
+body {
+    background-image:url(/graphics/background/orange_stars.gif) ;
+    color:#fff;
+    font-size:1.6em;
+    letter-spacing:.1em;
+    line-height:1.5;
+    padding:20px;
+    text-align:center;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: underline;
+    color:#FFAD63;
+}
+
+#wrapper {
+    width: clamp(30vw, 60em, 100vw);
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+#content {
+    background: #00000000;
+    margin: 0 auto;
+    font-size: 24px;
+    width: 98%;
+}
+
+h1 {
+    font-size: 32px;
+    padding: 0px;
+    margin: 5px;
+}
+
+h2 {
+    font-size: 22px;
+    text-align: center;
+}
+
+p {
+    font-size: 22px;
+}
+
+#content-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+#content-box1 {
+    order: 0;
+    flex-grow: 1;
+    flex-basis: 25%;
+    background-color: #000000;
+    border: groove #FFAD63 3px;
+    box-shadow: 10px 10px 20px #000000af;
+    align-self: auto;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    margin: 5px;
+    padding: 10px;
+    height:auto;
+}
+
+#content-box2 {
+    align-items: center;
+}
+
+#content-minibox {
+    background-color: #000000;
+    border: groove #bcc4c7 3px;
+    height: 33%;
+    width: inherit;
+    padding: 5px;
+    margin: 10px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+#minibox-text {
+    font-size: 14px;
+    text-align: left;
+    align-items: left;
+    align-content: left;
+    padding-left: 10px;
+    padding-top: 5px;
+}
+
+ul {
+    padding: 2px;
+    margin: 1px;
+    list-style: square;
+}
+
+ul li {
+    padding: 5px;
+    margin: 1px;
+}
+
+#tableInput {
+    background-color: #222;
+    width: 95%;
+    font-size: 16px;
+    color: #eee;
+    padding: 15px 15px 10px 15px;
+    border: 1px solid #ddd;
+    margin-bottom: 12px;
+}
+
+#table-format {
+    border-collapse: collapse;
+    width: 100%;
+    border: 1px solid #ddd;
+    font-size: 18px;
+}
+
+#table-format th, #table-format td {
+    text-align: left;
+    padding: 12px;
+}
+
+#table-format tr {
+    border-bottom: 1px solid #ddd;
+}
+
+#table-format tr.header {
+    background-color: #f1f1f1;
+}
+
+#tr-title th:hover {
+    background-color: #ddd;
+    color: #000;
+    cursor: pointer;
+}
+
+.sortable th {
+    cursor: pointer;
+}
+.sortable th.no-sort {
+    pointer-events: none;
+}
+.sortable th::after, 
+.sortable th::before {
+    transition: color 0.2s ease-in-out;
+    font-size: 1.2em;
+    color: transparent;
+}
+.sortable th::after {
+    margin-left: 3px;
+    content: '\025B8';
+}
+.sortable th:hover::after {
+    color: inherit;
+}
+.sortable th.dir-d::after {
+    color: inherit;
+    content: '\025BE';
+}
+.sortable th.dir-u::after {
+    color: inherit;
+    content: '\025B4';
+}
+
+#game-art {
+    height: 75px;
+}

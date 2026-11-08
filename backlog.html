@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>mothgirl's backlog</title>
+        <link rel="stylesheet" href="backlog.css" type="text/css">
+    </head>
+    <body>
+        <div id="wrapper">
+            <div id="content">
+                <div id="content-wrapper">
+                    <div id="content-box1">
+                        <div id="content-box2">
+                            <h1>Group Gaming Backlog</h1>
+                            <p style="font-size:16px;">
+                                <a href="/">Return Home?</a>
+                            </p>
+                            <p style="text-align:left;padding-left:20px;">
+                                A backlog of games I've been playing through with my wife and our friend. This is mostly here for our purposes, but I suppose you can look too. I will not be elaborating on anything here to strangers. Maybe someday I'll fix this up to look more fancy, have more search tools, formatted better, or whatever. Maybe I'll even add reviews. But for now, here is a glimpse into what we have been playing through.
+                            </p>
+
+                            <input type="text" id="tableInput" onkeyup="tableFunction()" placeholder="Search..."> 
+                            <table id="table-format">
+                                <thead>
+                                    <tr id="tr-title">
+                                        <th onclick="sortTable(0)">Game</th>
+                                        <th onclick="sortTable(1)">Status</th>
+                                        <th onclick="sortTable(2)">Length</th>
+                                        <th onclick="sortTable(3)">Player</th>
+                                        <th onclick="sortTable(4)">Platform</th>
+                                    </tr>
+                                </thead>
+                                <tr>
+                                    <td>
+                                        <img id="game-art" src="/graphics/game_arts/undertaleredyellow.jpg"><br>
+                                        Undertale Red & Yellow
+                                    </td>
+                                    <td>
+                                        Backlog
+                                    </td>
+                                    <td>
+                                        ~20 hrs
+                                    </td>
+                                    <td>
+                                        Moth
+                                    </td>
+                                    <td>
+                                        <a href="https://store.steampowered.com/app/391540/Undertale/">Steam</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <img id="game-art" src="/graphics/game_arts/pokemonsoulsilver.png"><br>
+                                        Pokemon SoulSilver
+                                    </td>
+                                    <td>
+                                        Playing
+                                    </td>
+                                    <td>
+                                        ~50 hrs
+                                    </td>
+                                    <td>
+                                        Moth
+                                    </td>
+                                    <td>
+                                        Nintendo DS
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <img id="game-art" src="/graphics/game_arts/sonicfrontiers.png"><br>
+                                        Sonic Frontiers
+                                    </td>
+                                    <td>
+                                        Playing
+                                    </td>
+                                    <td>
+                                        ~20 hrs
+                                    </td>
+                                    <td>
+                                        Moth
+                                    </td>
+                                    <td>
+                                        <a href="https://store.steampowered.com/app/1237320/Sonic_Frontiers/">Steam</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <img id="game-art" src="/graphics/game_arts/callofdutyblackops3.jpg"><br>
+                                        Call of Duty: Black Ops III
+                                    </td>
+                                    <td>
+                                        Ongoing
+                                    </td>
+                                    <td>
+                                        N/A
+                                    </td>
+                                    <td>
+                                        Group
+                                    </td>
+                                    <td>
+                                        <a href="https://store.steampowered.com/app/311210/Call_of_Duty_Black_Ops_III/">Steam</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <img id="game-art" src="/graphics/game_arts/roblox.png"><br>
+                                        Roblox
+                                    </td>
+                                    <td>
+                                        Ongoing
+                                    </td>
+                                    <td>
+                                        N/A
+                                    </td>
+                                    <td>
+                                        Group
+                                    </td>
+                                    <td>
+                                        <a href="https://www.roblox.com/home">Roblox</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <img id="game-art" src="/graphics/game_arts/instarsandtime.png"><br>
+                                        In Stars and Time
+                                    </td>
+                                    <td>
+                                        Playing
+                                    </td>
+                                    <td>
+                                        ~30 hrs
+                                    </td>
+                                    <td>
+                                        Angel
+                                    </td>
+                                    <td>
+                                        <a href="https://store.steampowered.com/app/1677310/In_Stars_And_Time/">Steam</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <img id="game-art" src="/graphics/game_arts/masseffectlegendaryedition.png"><br>
+                                        Mass Effect
+                                    </td>
+                                    <td>
+                                        Backlog
+                                    </td>
+                                    <td>
+                                        ~100 hrs
+                                    </td>
+                                    <td>
+                                        Harpy
+                                    </td>
+                                    <td>
+                                        <a href="https://store.steampowered.com/app/1328670/Mass_Effect_Legendary_Edition/">Steam</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <img id="game-art" src="/graphics/game_arts/deltarune.webp"><br>
+                                        Deltarune
+                                    </td>
+                                    <td>
+                                        Paused
+                                    </td>
+                                    <td>
+                                        Unknown
+                                    </td>
+                                    <td>
+                                        Moth
+                                    </td>
+                                    <td>
+                                        <a href="https://store.steampowered.com/app/1671210/DELTARUNE/">Steam</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <img id="game-art" src="/graphics/game_arts/gmod.jpg"><br>
+                                        Garry's Mod
+                                    </td>
+                                    <td>
+                                        Ongoing
+                                    </td>
+                                    <td>
+                                        N/A
+                                    </td>
+                                    <td>
+                                        Group
+                                    </td>
+                                    <td>
+                                        <a href="https://store.steampowered.com/app/4000/Garrys_Mod/">Steam</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <img id="game-art" src="/graphics/game_arts/fortnite.png"><br>
+                                        Fortnite
+                                    </td>
+                                    <td>
+                                        Ongoing
+                                    </td>
+                                    <td>
+                                        N/A
+                                    </td>
+                                    <td>
+                                        Group
+                                    </td>
+                                    <td>
+                                        <a href="https://store.epicgames.com/p/fortnite">Epic Games</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <img id="game-art" src="/graphics/game_arts/minecraft.png"><br>
+                                        Minecraft
+                                    </td>
+                                    <td>
+                                        Ongoing
+                                    </td>
+                                    <td>
+                                        N/A
+                                    </td>
+                                    <td>
+                                        Group
+                                    </td>
+                                    <td>
+                                        <a href="https://www.minecraft.net/en-us">Microsoft</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <img id="game-art" src="/graphics/game_arts/undertale.png"><br>
+                                        Undertale
+                                    </td>
+                                    <td>
+                                        Completed
+                                    </td>
+                                    <td>
+                                        ~20 hrs
+                                    </td>
+                                    <td>
+                                        Harpy
+                                    </td>
+                                    <td>
+                                        <a href="https://store.steampowered.com/app/391540/Undertale/">Steam</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <img id="game-art" src="/graphics/game_arts/undertaleyellow.png"><br>
+                                        Undertale Yellow
+                                    </td>
+                                    <td>
+                                        Completed
+                                    </td>
+                                    <td>
+                                        ~20 hrs
+                                    </td>
+                                    <td>
+                                        Moth
+                                    </td>
+                                    <td>
+                                        <a href="https://gamejolt.com/games/UndertaleYellow/136925">Gamejolt</a>
+                                    </td>
+                                </tr>
+                                <!-- 
+                                <tr>
+                                    <td>
+                                        <img id="game-art" src="/graphics/game_arts/"><br>
+                                        Game Name
+                                    </td>
+                                    <td>
+                                        Status
+                                    </td>
+                                    <td>
+                                        ~## hrs
+                                    </td>
+                                    <td>
+                                        Player
+                                    </td>
+                                    <td>
+                                        <a href="/">Platform</a>
+                                    </td>
+                                </tr>
+                                -->
+
+                            </table>
+                            <script>
+                                function tableFunction() {
+                                    // Declare variables
+                                    var input, filter, table, tr, td, i, txtValue;
+                                    input = document.getElementById("tableInput");
+                                    filter = input.value.toUpperCase();
+                                    table = document.getElementById("table-format");
+                                    tr = table.getElementsByTagName("tr");
+
+                                    // Loop through all table rows, and hide those who don't match the search query
+                                    for (i = 0; i < tr.length; i++) {
+                                        td = tr[i].getElementsByTagName("td")[0];
+                                        if (td) {
+                                            txtValue = td.textContent || td.innerText;
+                                            if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                                                tr[i].style.display = "";
+                                            } 
+                                            else {
+                                                tr[i].style.display = "none";
+                                            }
+                                        }
+                                    }
+                                }
+                            </script>
+                            <script>
+                                function sortTable(n) {
+                                    var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
+                                    table = document.getElementById("table-format");
+                                    switching = true;
+                                    dir = "asc";
+                                    while (switching) {
+                                        // Start by saying: no switching is done:
+                                        switching = false;
+                                        rows = table.rows;
+                                        /* Loop through all table rows (except the
+                                        first, which contains table headers): */
+                                        for (i = 1; i < (rows.length - 1); i++) {
+                                        // Start by saying there should be no switching:
+                                        shouldSwitch = false;
+                                        /* Get the two elements you want to compare,
+                                        one from current row and one from the next: */
+                                        x = rows[i].getElementsByTagName("TD")[n];
+                                        y = rows[i + 1].getElementsByTagName("TD")[n];
+                                        /* Check if the two rows should switch place,
+                                        based on the direction, asc or desc: */
+                                        if (dir == "asc") {
+                                            if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
+                                            // If so, mark as a switch and break the loop:
+                                            shouldSwitch = true;
+                                            break;
+                                            }
+                                        } else if (dir == "desc") {
+                                            if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {
+                                            // If so, mark as a switch and break the loop:
+                                            shouldSwitch = true;
+                                            break;
+                                            }
+                                        }
+                                        }
+                                        if (shouldSwitch) {
+                                        /* If a switch has been marked, make the switch
+                                        and mark that a switch has been done: */
+                                        rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
+                                        switching = true;
+                                        // Each time a switch is done, increase this count by 1:
+                                        switchcount ++;
+                                        } else {
+                                        /* If no switching has been done AND the direction is "asc",
+                                        set the direction to "desc" and run the while loop again. */
+                                        if (switchcount == 0 && dir == "asc") {
+                                            dir = "desc";
+                                            switching = true;
+                                        }
+                                        }
+                                    }
+                                }
+                            </script>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
